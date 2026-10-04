@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EXPOSED: Mystery Figure Followed Elbert for Weeks | Official Statement</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f1f2ee;
+    --panel: #e4e6e0;
+    --ink: #161a24;
+    --navy: #17284a;
+    --muted: #596070;
+    --alert: #b3211a;
+    --rule: #2b3347;
+    --link: #17428a;
+  }
+  * { box-sizing: border-box; }
+  html { font-size: 20px; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: "Old Standard TT", Georgia, "Times New Roman", serif; line-height: 1.7;
+  }
+
+  .browser-bar {
+    position: sticky; top: 0; z-index: 50;
+    display: flex; align-items: center; gap: 14px;
+    background: #cfcfcf; border-bottom: 2px solid #8d8d8d;
+    padding: 8px 18px; font-family: Arial, Helvetica, sans-serif; font-size: 0.8rem;
+  }
+  .browser-bar .dots span { display:inline-block; width:11px; height:11px; border-radius:50%; background:#9a9a9a; margin-right:5px; }
+  .browser-bar .url { flex: 1; background: #fff; border: 1px solid #9d9d9d; border-radius: 4px; padding: 4px 12px; color: #222; }
+  .browser-bar .url b { color: #1e7b34; font-weight: normal; }
+
+  .topstrip {
+    background: var(--navy); color: #dfe4f0; font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.62rem; padding: 5px 24px; display: flex; justify-content: space-between;
+  }
+
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 28px; }
+
+  header.site {
+    display: flex; align-items: center; gap: 22px;
+    padding: 20px 0 14px; border-bottom: 5px solid var(--navy);
+  }
+  .seal {
+    width: 84px; height: 84px; border-radius: 50%; border: 4px double var(--navy);
+    display: flex; align-items: center; justify-content: center; text-align: center;
+    font-family: "Playfair Display", Georgia, serif; font-weight: 900; font-size: 0.55rem; line-height: 1.15;
+    color: var(--navy); flex-shrink: 0; background: #fff;
+  }
+  header.site h1 {
+    font-family: "Playfair Display", Georgia, serif; font-weight: 900;
+    font-size: 3rem; margin: 0; line-height: 1; color: var(--navy);
+  }
+  header.site .sub { font-style: italic; color: var(--muted); font-size: 0.75rem; margin-top: 4px; }
+
+  nav.menu {
+    display: flex; gap: 34px; border-bottom: 1px solid var(--rule); padding: 8px 0;
+    font-family: "Playfair Display", Georgia, serif; font-weight: 700; font-size: 0.82rem;
+  }
+  nav.menu .active { color: var(--alert); }
+
+  .layout { display: grid; grid-template-columns: 1fr 300px; gap: 38px; padding: 26px 0 40px; }
+
+  .badge {
+    display: inline-block; background: var(--alert); color: #fff;
+    font-family: Arial, Helvetica, sans-serif; font-weight: 700; font-size: 0.7rem;
+    padding: 2px 10px; letter-spacing: 1px; animation: blink 1.2s steps(2, start) infinite;
+  }
+  @keyframes blink { to { visibility: hidden; } }
+
+  h2.headline {
+    font-family: "Playfair Display", Georgia, serif; font-weight: 900;
+    font-size: 2.7rem; line-height: 1.12; margin: 12px 0 10px; color: var(--navy);
+  }
+  h2.headline .hl {
+    background: linear-gradient(transparent 0 0) no-repeat left / 0% 100%;
+    transition: background-size 0.9s ease;
+  }
+  h2.headline.selected .hl {
+    background: linear-gradient(rgba(255, 226, 60, 0.8) 0 0) no-repeat left / 100% 100%;
+  }
+  .byline {
+    font-size: 0.68rem; color: var(--muted); font-style: italic;
+    border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+    padding: 6px 0; margin-bottom: 16px;
+  }
+
+  figure.photo { margin: 0 0 20px; }
+  .photo .frame { border: 1px solid var(--rule); padding: 6px; background: #fff; }
+  .photo img {
+    display: block; width: 100%; height: auto; max-height: 440px; object-fit: cover;
+    filter: grayscale(0.7) contrast(1.05);
+  }
+  .photo .placeholder {
+    display: none; height: 340px; align-items: center; justify-content: center;
+    background: #c9ccd2; color: #4b5160; font-family: Arial, sans-serif; font-size: 0.8rem; text-align: center;
+  }
+  .photo figcaption { font-size: 0.62rem; font-style: italic; color: var(--muted); padding-top: 6px; }
+
+  .article p { margin: 0 0 1em; text-align: justify; hyphens: auto; }
+  .article p.lead::first-letter {
+    font-family: "Playfair Display", Georgia, serif; font-weight: 900;
+    float: left; font-size: 4.2rem; line-height: 0.82; padding: 6px 10px 0 0; color: var(--navy);
+  }
+  .notice {
+    border: 2px solid var(--navy); background: var(--panel); padding: 12px 16px;
+    font-size: 0.78rem; margin: 22px 0;
+  }
+  .notice b { font-family: "Playfair Display", Georgia, serif; color: var(--alert); }
+
+  aside .box { border: 2px solid var(--rule); background: var(--panel); padding: 14px 16px; margin-bottom: 24px; }
+  aside h3 {
+    font-family: "Playfair Display", Georgia, serif; font-size: 0.95rem; margin: 0 0 10px;
+    border-bottom: 2px solid var(--rule); padding-bottom: 4px; color: var(--navy);
+  }
+  aside ol { margin: 0; padding-left: 1.2em; font-size: 0.72rem; line-height: 1.45; }
+  aside ol li { margin-bottom: 10px; color: var(--link); text-decoration: underline; }
+  aside .small { font-size: 0.62rem; color: var(--muted); font-family: Arial, sans-serif; }
+
+  .comments { border-top: 4px double var(--rule); padding: 18px 0 40px; }
+  .comments h3 { font-family: "Playfair Display", Georgia, serif; font-size: 1.2rem; margin: 0 0 14px; color: var(--navy); }
+  .post { display: grid; grid-template-columns: 130px 1fr; border: 1px solid var(--rule); background: #fafaf7; margin-bottom: 14px; }
+  .post .user {
+    background: var(--panel); border-right: 1px solid var(--rule); padding: 10px;
+    font-family: Arial, Helvetica, sans-serif; font-size: 0.6rem; line-height: 1.5;
+  }
+  .post .user b { display: block; font-size: 0.75rem; color: var(--link); }
+  .post .avatar {
+    width: 54px; height: 54px; background: #7b8396; color: #fff; display: flex;
+    align-items: center; justify-content: center; font-size: 1.4rem; font-weight: 700; margin-bottom: 6px;
+  }
+  .post .body { padding: 10px 16px; font-size: 0.8rem; }
+  .post .meta { font-family: Arial, sans-serif; font-size: 0.58rem; color: var(--muted); border-bottom: 1px dotted var(--muted); margin-bottom: 6px; padding-bottom: 3px; }
+  .post .body p { margin: 0; line-height: 1.5; }
+
+  footer { background: var(--navy); color: #b9c1d6; text-align: center; font-size: 0.6rem; font-family: Arial, sans-serif; padding: 18px; }
+
+
+  @media (max-width: 900px) {
+    html { font-size: 16px; }
+    .layout { grid-template-columns: 1fr; }
+    header.site h1 { font-size: 2rem; }
+    .post { grid-template-columns: 90px 1fr; }
+  }
+  @media (prefers-reduced-motion: reduce) { .badge { animation: none; } }
+</style>
+</head>
+<body>
+
+<div class="topstrip">
+  <div>Verified Source &middot; Office of the Management Team</div>
+  <div>Updated: Oct 3, 2026, 9:40 PM</div>
+</div>
+
+<div class="wrap">
+  <header class="site">
+    <div class="seal">OFFICIAL<br>STATEMENT<br>&#9733;</div>
+    <div>
+      <h1>Official Statement</h1>
+      <div class="sub">Verified updates from the management team of Elbert</div>
+    </div>
+  </header>
+  <nav class="menu">
+    <span class="active">Breaking</span><span>Statements</span><span>Press Room</span><span>Contact</span>
+  </nav>
+
+  <div class="layout">
+    <main>
+      <article class="article">
+        <span class="badge">BREAKING</span>
+        <h2 class="headline" id="headline"><span class="hl">EXPOSED: Mystery Figure Followed Elbert for Weeks</span></h2>
+        <div class="byline">Issued by Management Office &nbsp;|&nbsp; Posted Oct 3, 2026 &nbsp;|&nbsp; Read time: 1 min</div>
+
+        <p class="lead">Elbert&rsquo;s team says it holds photo evidence showing someone following the actor across multiple locations.</p>
+        <p>Management urges the media to respect Elbert&rsquo;s privacy and stop sharing photos taken without consent.</p>
+
+        <div class="notice"><b>Notice:</b> Any outlet publishing photos of Elbert taken without his consent will be contacted directly by our team.</div>
+      </article>
+
+      <section class="comments">
+        <h3>Reader Discussion (63)</h3>
+
+        <div class="post">
+          <div class="user"><div class="avatar">A</div><b>agnes_reads</b>Senior Member<br>Posts: 1,502<br>Joined: Jun 2020</div>
+          <div class="body"><div class="meta">#1 &middot; Oct 3, 2026, 9:55 PM</div><p>So the photographer was being watched too. Now this gets interesting.</p></div>
+        </div>
+
+        <div class="post">
+          <div class="user"><div class="avatar">T</div><b>tom_the_critic</b>Member<br>Posts: 411<br>Joined: Feb 2022</div>
+          <div class="body"><div class="meta">#2 &middot; Oct 3, 2026, 10:11 PM</div><p>Privacy matters. Whoever took those photos should step forward.</p></div>
+        </div>
+      </section>
+    </main>
+
+    <aside>
+      <div class="box">
+        <h3>Related Reading</h3>
+        <ol>
+          <li>Ethics of Celebrity Coverage</li>
+          <li>Privacy Is Not Public Property</li>
+          <li>What To Do When You Are Being Followed</li>
+        </ol>
+      </div>
+      <div class="box">
+        <h3>Press Contact</h3>
+        <p class="small" style="margin:0">Media inquiries must be sent to the management office in writing. Unverified photos will not be commented on.</p>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer>&copy; 2026 Office of the Management Team of Elbert. &nbsp;|&nbsp; Statements &nbsp;|&nbsp; Press Room &nbsp;|&nbsp; Privacy</footer>
+
+<script>
+  /* ====== EASY SETTINGS (change these numbers if needed) ====== */
+  var HIGHLIGHT_MS    = 3300;   // when the headline gets highlighted
+  var SCROLL_START_MS = 5500;   // when the page starts scrolling down
+  var SCROLL_SPEED    = 45;     // pixels per second (lower = slower)
+  /* ============================================================ */
+
+  var headline = document.getElementById('headline');
+
+  setTimeout(function () { headline.classList.add('selected'); }, HIGHLIGHT_MS);
+
+  setTimeout(function () {
+    var last = null;
+    var pos = window.scrollY;
+    function step(t) {
+      if (last === null) last = t;
+      var dt = (t - last) / 1000; last = t;
+      var max = document.documentElement.scrollHeight - window.innerHeight;
+      if (pos < max) {
+        pos += SCROLL_SPEED * dt;
+        window.scrollTo(0, pos);
+        requestAnimationFrame(step);
+      }
+    }
+    requestAnimationFrame(step);
+  }, SCROLL_START_MS);
+
+  /* Click anywhere (or press R) to reset the page for another take */
+  document.addEventListener('click', function () { location.reload(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'r' || e.key === 'R') location.reload(); });
+</script>
+</body>
+</html>
